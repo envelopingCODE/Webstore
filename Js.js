@@ -139,7 +139,7 @@ const closeMenuButtonEl = document.getElementById("close-menu");
         renderCartItems(cart); // Render the cart items
     });
     
-    
+   /*  
     // Event Listener for Menu toggle 
 openMenuButtonEl.addEventListener('click', ToggleMenu);
 closeMenuButtonEl.addEventListener('click', ToggleMenu);
@@ -158,7 +158,7 @@ function ToggleMenu () {
 
 
 
-// Event Listener for Return to Top button
+Event Listener for Return to Top button
 document.addEventListener("DOMContentLoaded", function() {
     const returnToTopButton = document.getElementById('return-to-top');
 
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
    
-});
+}); */
 
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const overlays = document.querySelectorAll('.overlay');
