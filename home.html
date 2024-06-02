@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+          </style>
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    
+    <div id="scroll-container">
+
+    <header>
+    <!-- Navigation -->
+
+    <nav class="navbar">
+        <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+</header> 
+
+    <!-- Hero Section -->
+    <div id="home" class="hero-section">
+   
+        </video>
+        <div class="hero-content">
+           
+                        <h1> Unearth the rejuvenating power of Nature
+                            </h1>
+            <p>Welcome to Naturally Nate's organic shop. These product are made just for you! 💝 ReDiscover the beauty of nature and unearth the ingredients for your next breakfast below
+            </p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </div>
+
+    <div class="video-container">
+
+        <video src="Pictures/video_background.webm" autoplay muted loop></video>
+    </div>
+    
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+        <div class="product-grid">
+            <!-- Example Product Card -->
+            <div class="product-card">
+                <img src="Pictures/Walnuts.png" alt="Product Image">
+                <h2><a class="product-links" href="product-1.html">Naturally Nate's Organic Walnuts</a></h2>
+                <p class="price">€10</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Pictures/Oats.png" alt="Product Image">
+                <h2><a class="product-links" href="product-2.html">Naturally Nate's Organic Oats</a></h2>
+                <p class="price">€6</p>
+                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Pictures/Paleo.png" alt="Product Image">
+                <h2><a class="product-links" href="product-3.html">Naturally Nate's Paleo Muesli</a></h2>
+                <p class="price">€12</p>
+                <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Pictures/sunflower_seeds.png" alt="Product Image">
+                <h2><a class="product-links" href="product-4.html">Naturally Nate's Organic Sunflower Seeds</a></h2>
+                <p class="price">€6</p>
+                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Pictures/almonds.png" alt="Product Image">
+                <h2><a class="product-links" href="product-5.html">Naturally Nate essentials: Organic Almonds</a></h2>
+                <p class="price">$12</p>
+                <button class="add-to-cart" data-product-id="5">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+        <h2>About Us</h2>
+        <p>Our company mission and values...</p>
+        <div class="team">
+            <!-- Example Team Member -->
+            <div class="team-member">
+                <img src="path/to/team-member.jpg" alt="Team Member">
+                <h3>Team Member Name</h3>
+                <p>Team Member Bio...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <p>Address: 123 Main St, Anytown, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@company.com</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <p class="total">Total: $0.00</p>
+        <button id="checkout-button">Checkout</button>
+        <button id="clear-cart-button">Clear Cart</button>
+    </section>
+    
+    <!-- Slideshow Section -->
+   
+<div class="slideshow-container">
+    <h2>User submitted photos</h2>
+    <div class="mySlides">
+        <img src="Pictures/sunflower_seeds.png" style="width:100%">
+        <div class="numbertext">1 / 5</div>
+    </div>
+    
+    <div class="mySlides">
+        <img src="Pictures/Oats.png" style="width:100%">
+        <div class="numbertext">2 / 5</div>
+    </div>
+    
+    <div class="mySlides">
+        <img src="Pictures/Paleo JPG.jpg" style="width:100%">
+        <div class="numbertext">3 / 5</div>
+    </div>
+
+        
+    <div class="mySlides">
+        <img src="Pictures/Walnuts.png" style="width:100%">
+        <div class="numbertext">4 / 5</div>
+    </div>
+    
+        
+    <div class="mySlides">
+          <img src="Pictures/almonds.png" style="width:100%">
+        <div class="numbertext">5/ 5</div>
+    </div>
+    
+    
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+    
+    <div class="caption-container">
+        <p class="caption"></p>
+    </div>
+</div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
