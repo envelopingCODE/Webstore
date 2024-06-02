@@ -301,7 +301,15 @@ background-color: cadetblue ;
 
 #home, #about-us {
     flex-direction: column;
+ 
 }
+
+#about-us p, h2 { 
+text-align: center;
+
+}
+
+
 .cta-button {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -411,14 +419,16 @@ padding: 1rem;
   }
 
 .about-us-section {
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.5);
+    
 }
 
 .team {
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
@@ -426,16 +436,18 @@ padding: 1rem;
 
 .team-member {
     text-align: center;
+    max-width: 600px;
+
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
 }
 
 .contact-us-section {
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
 }
 
