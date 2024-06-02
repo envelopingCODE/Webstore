@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
    
-}); */
+}); 
 
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const overlays = document.querySelectorAll('.overlay');
@@ -191,3 +191,4 @@ addToCartButtons.forEach((button, index) => {
   });
 });
 
+*/
