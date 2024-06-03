@@ -6,6 +6,7 @@ const openMenuButtonEl = document.getElementById("open-menu");
 const closeMenuButtonEl = document.getElementById("close-menu");
 
 
+
     // Progress bar
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -139,10 +140,13 @@ const closeMenuButtonEl = document.getElementById("close-menu");
         renderCartItems(cart); // Render the cart items
     });
     
-   
+
+ 
+
     // Event Listener for Menu toggle 
 openMenuButtonEl.addEventListener('click', ToggleMenu);
 closeMenuButtonEl.addEventListener('click', ToggleMenu);
+  
 
 function ToggleMenu () {
     let navMenuEl = document.getElementById("nav-menu");
@@ -156,6 +160,12 @@ function ToggleMenu () {
     }
  };
 
+ document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Close the menu when a link is clicked
+        ToggleMenu();
+    });
+});
 
 /*
 Event Listener for Return to Top button
