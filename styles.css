@@ -759,6 +759,13 @@ a:hover {
 @media screen and (min-width: 1521px) {
 
     
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    max-width: 400px;
+
+
+}
     
 
         #widescreen-nav {
