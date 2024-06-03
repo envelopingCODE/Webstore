@@ -9,17 +9,71 @@
 <body>
     <div id="progress-bar"></div>
     <div id="scroll-container">
-        <header>
-            <nav class="navbar">
-                <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#cart">Cart</a></li>
-                </ul>
-            </nav>
+
+        <header> 
+            <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
+            <div id="widescreen-div">
+
+                  <!-- Widescreen Nav -->
+                  <nav id="widescreen-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#cart">Cart</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        
+                <div id="mobile-menu">
+                    
+                 <!-- Menu button -->
+        
+                <button class="menu-bttn-open" id="open-menu">
+                
+        
+        <span class="menu-icon">
+                <span class="lines">
+                </span>
+                <span class="lines">
+                </span>
+                <span class="lines">
+                </span>
+        
+        </span>
+               <span class="menu-text">Menu </span> 
+                </button>
+        
+                <!-- Mobile Nav Menu sections-->
+              
+                <nav id="nav-menu">
+                   
+                <button class="menu-bttn-close" id="close-menu">
+                        <span class="menu-icon"> 
+                        <span class="linecross1"></span>    
+                        <span class="linecross2"></span>
+        
+                            </span>
+        
+                <span class="menu-text">Close Menu</span>
+               
+        
+             </button>
+        
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+                </nav>
+            </div>
         </header>
+        
+
+
+
         <div id="home" class="product-hero-section">
             <div class="product-details-container">
                 <div class="product-card-details">
@@ -63,7 +117,7 @@
                 <div class="product-card">
                     <img src="Pictures/almonds.png" alt="Product Image">
                     <h2><a class="product-links" href="product-5.html">Naturally Nate essentials: Organic Almonds</a></h2>
-                    <p class="price">$12</p>
+                    <p class="price">€12</p>
                     <button class="add-to-cart" data-product-id="5">Add to Cart</button>
                 </div>
             </div>
@@ -73,7 +127,7 @@
             <div class="cart-items">
                 <!-- Cart items will be dynamically added here -->
             </div>
-            <p class="total">Total: $0.00</p>
+            <p class="total">Total: €0.00</p>
             <button id="checkout-button">Checkout</button>
             <button id="clear-cart-button">Clear Cart</button>
         </section>

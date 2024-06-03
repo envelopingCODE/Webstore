@@ -17,20 +17,68 @@
     
     <div id="scroll-container">
 
-    <header>
-    <!-- Navigation -->
+   
+  <!-- Navigation -->
+  <header> 
+    <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
+    <div id="widescreen-div">
 
-    <nav class="navbar">
-        <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
+          <!-- Widescreen Nav -->
+          <nav id="widescreen-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+            
+        </nav>
+    </div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#cart">Cart</a></li>
-        </ul>
-    </nav>
-</header> 
+        <div id="mobile-menu">
+            
+         <!-- Menu button -->
+
+        <button class="menu-bttn-open" id="open-menu">
+        
+
+<span class="menu-icon">
+        <span class="lines">
+        </span>
+        <span class="lines">
+        </span>
+        <span class="lines">
+        </span>
+
+</span>
+       <span class="menu-text">Menu </span> 
+        </button>
+
+        <!-- Mobile Nav Menu sections-->
+      
+        <nav id="nav-menu">
+           
+        <button class="menu-bttn-close" id="close-menu">
+                <span class="menu-icon"> 
+                <span class="linecross1"></span>    
+                <span class="linecross2"></span>
+
+                    </span>
+
+        <span class="menu-text">Close Menu</span>
+       
+
+     </button>
+
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cart">Cart</a></li>
+    </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <div id="home" class="product-hero-section">
@@ -94,7 +142,7 @@
         <div class="cart-items">
             <!-- Cart items will be dynamically added here -->
         </div>
-        <p class="total">Total: $0.00</p>
+        <p class="total">Total: €0.00</p>
         <button id="checkout-button">Checkout</button>
         <button id="clear-cart-button">Clear Cart</button>
     </section>
