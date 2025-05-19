@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Website</title>
+    <title>NN Shop</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="icon" href="Pictures/favicon.ico">
     <style>
 
           </style>
@@ -17,20 +17,68 @@
     
     <div id="scroll-container">
 
-    <header>
-    <!-- Navigation -->
+   
+  <!-- Navigation -->
+  <header> 
+    <a id="logo-link" href="index.html"> <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"></a>
+    <div id="widescreen-div">
 
-    <nav class="navbar">
-        <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo">
+          <!-- Widescreen Nav -->
+          <nav id="widescreen-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+            
+        </nav>
+    </div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#cart">Cart</a></li>
-        </ul>
-    </nav>
-</header> 
+        <div id="mobile-menu">
+            
+         <!-- Menu button -->
+
+        <button class="menu-bttn-open" id="open-menu">
+        
+
+<span class="menu-icon">
+        <span class="lines">
+        </span>
+        <span class="lines">
+        </span>
+        <span class="lines">
+        </span>
+
+</span>
+       <span class="menu-text">Menu </span> 
+        </button>
+
+        <!-- Mobile Nav Menu sections-->
+      
+        <nav id="nav-menu">
+           
+        <button class="menu-bttn-close" id="close-menu">
+                <span class="menu-icon"> 
+                <span class="linecross1"></span>    
+                <span class="linecross2"></span>
+
+                    </span>
+
+        <span class="menu-text">Close Menu</span>
+       
+
+     </button>
+
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cart">Cart</a></li>
+    </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <div id="home" class="product-hero-section">
@@ -94,7 +142,7 @@
         <div class="cart-items">
             <!-- Cart items will be dynamically added here -->
         </div>
-        <p class="total">Total: $0.00</p>
+        <p class="total">Total: €0.00</p>
         <button id="checkout-button">Checkout</button>
         <button id="clear-cart-button">Clear Cart</button>
     </section>
@@ -128,17 +176,23 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="about-us" class="about-us-section">
         <h2>About Us</h2>
-        <p>Our company mission and values...</p>
-        <div class="team">
-            <!-- Example Team Member -->
+        <p>At Naturally Nate, our mission is to provide our customers with the highest quality organic products sourced sustainably from nature. We believe in promoting health and well-being through nutritious and delicious food options. Our values include transparency, integrity, and environmental stewardship. We are committed to fostering a community of health-conscious individuals who share our passion for wholesome living.</p>        <div class="team">
+            <!--  Team Member -->
             <div class="team-member">
-                <img src="path/to/team-member.jpg" alt="Team Member">
-                <h3>Team Member Name</h3>
-                <p>Team Member Bio...</p>
+                <img src="lama-co-starter.png" alt="Another Team Member">
+                <h3>Jane Smith</h3>
+                <p>Jane is our head of marketing. With her creative ideas and strategic thinking, she ensures that our products reach the right audience and make a positive impact in the market.</p>
             </div>
+           <!--  Team Member -->
+
+            <div class="team-member">
+                <img src="Pictures/portrait.png" alt="Team Member">
+                <h3>Nate W.</h3>
+                <p>Nate is a co-founder and CEO of Naturally Nate. With a passion for healthy and sustainable living, Nate leads our team in delivering high-quality, organic products to our customers.</p>
+            </div>
+           
         </div>
     </section>
 

@@ -5,6 +5,10 @@ body {
     
 }
 
+#logo-link {
+    border-bottom: none;
+}
+
 /* Slideshow */
 
 .slideshow-container {
@@ -12,13 +16,14 @@ body {
     max-width: 500px;
     margin: auto;
     margin-top: 100px;
-    background-color: #fffaface;
-
+    background-color: #fffafad9;
+    border-radius: 8px;
 }
 
 .slideshow-container h2 {
     text-align: center;
-    text-shadow: #000 0.5px 0.5px 0.2px;
+    text-shadow: #000 0.2px 0.5px 0.2px;
+    margin-top: 20px;
 }
 .mySlides {
     display: none;
@@ -30,12 +35,14 @@ body {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.134);
+
 }
 .next {
     right: 0;
@@ -45,13 +52,13 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 .numbertext {
-    color: #f2f2f2;
+    color:  rgb(0, 255, 200);
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     left: 0;
-    background-color: #000;
+    background-color: #ffffff;
     opacity: 0.7;
     border-radius: 8px;
 }
@@ -96,6 +103,14 @@ z-index: 1000; /* Making sure it is on top of other elements */
 }
 }
 
+#logo {
+
+    scale: 2.6;
+    margin-bottom: 7px;
+}
+
+
+
 
 .navbar {
     position: fixed;
@@ -112,7 +127,6 @@ z-index: 1000; /* Making sure it is on top of other elements */
     background: rgba(25, 24, 24, 0.5);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     display: flex; 
     justify-content: space-around; }
 
@@ -131,16 +145,8 @@ z-index: 1000; /* Making sure it is on top of other elements */
     margin: 0 3rem;
 }
 
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    border-bottom: none
-}
 
-#logo {
-    scale: 4.5;
-  
-}
+
 
 header { 
 
@@ -287,6 +293,8 @@ button:hover {
     background-color: rgb(0, 255, 200);
 }
 
+
+
 button {
     transition-duration: 2ms;
 }
@@ -298,7 +306,15 @@ background-color: cadetblue ;
 
 #home, #about-us {
     flex-direction: column;
+ 
 }
+
+#about-us p, h2 { 
+text-align: center;
+
+}
+
+
 .cta-button {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -340,6 +356,7 @@ padding: 1rem;
     width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #f0f0f0ea;
+ 
 
 }
 
@@ -408,14 +425,16 @@ padding: 1rem;
   }
 
 .about-us-section {
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.5);
+    
 }
 
 .team {
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
@@ -423,16 +442,18 @@ padding: 1rem;
 
 .team-member {
     text-align: center;
+    max-width: 600px;
+
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
 }
 
 .contact-us-section {
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
 }
 
@@ -525,28 +546,282 @@ padding: 1rem;
 }
 
 .product-description {
-    max-width: 600px;
-    margin: 1rem;
+    max-width: 450px;
+    margin: 6rem;
     text-align: center;
+    font-size: 20px;
+}
+
+    
+/* Widescreen navigation */
+#widescreen-nav {
+    display: none;
 }
 
 
-@media screen and (max-width: 768px) {
-    .navbar ul {
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2em;
+}
+
+
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+   
+}
+
+nav li:hover {
+
+    cursor: pointer;
+   
+}
+
+nav a {
+    color: black;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+
+
+
+
+#close-menu {
+   height: 43px;
+} 
+
+a {
+
+   text-decoration: none;
+    transition: color 0.3s; /* Add a smooth transition for color change */
+}
+
+   
+/* Styles for the hamburger menu */
+.lines {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; /* Change color as needed */
+    margin-bottom: 5px;
+    position: relative;
+    transition: background-color .3s ease;
+  }
+  
+  .X {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-left: 0px; /* Adjust spacing as needed */
+  }
+    
+  
+
+nav {
+    background-color:rgb(0, 0, 0);
+    opacity: 80%;
+    box-shadow: 0 0px 10px black;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    height: 100vh;
+    width: 300px;
+    display:none;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+    padding:1em;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+}
+
+#open-menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+align-items: center;
+padding:8px 20px;
+background-color: #a67e7e00;
+color: #ffffff00;
+font-weight: bolder;
+opacity: 99%;
+}
+
+.menu-bttn-close {
+background-color:transparent;  
+border-color: transparent;
+border: transparent;
+}
+
+a {
+    border-bottom: 6px solid rgb(0, 255, 200);
+   text-decoration: none;
+    transition: color 0.3s; /* Add a smooth transition for color change */
+}
+
+a:hover { 
+    color:rgb(56, 147, 175) ;}
+    
+
+    .lines {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff; /* Change color as needed */
+        margin-bottom: 5px;
+        position: relative;
+        transition: background-color .3s ease;
+      }
+      
+    
+        
+    
+        .product-card-details {
+            padding: 1rem;
+            scale: 1;
+        }
+    
+        .hero-content {
+            padding: 1rem;
+            max-width: 90%;
+        }
+    
+        .hero-content-product-details {
+            padding: 1rem;
+            max-width: 90%;
+        }
+    
+        .cta-button {
+            padding: 0.5rem;
+        }
+    
+        .product-details-text {
+            max-width: 90%;
+        }
+
+
+    
+
+
+@media (max-width: 768px) {
+
+ 
+    
+    
+    
+    .product-card {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .product-card-details {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .product-grid {
         flex-direction: column;
-        padding: 1rem;
+        align-items: center;
+    }
+
+    .product-hero-section {
+        flex-direction: column;
     }
 
     .hero-content-product-details {
         max-width: 90%;
+        padding: 1rem;
     }
 
-    .product-card {
-        width: 90%;
-    }
-
-    .product-hero-section .media-container {
-        flex-direction: column;
+    .team-member {
+        max-width: 100%;
     }
 }
 
+
+@media screen and (min-width: 1521px) {
+
+    
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    max-width: 400px;
+
+}
+
+
+
+        #widescreen-nav {
+            display: flex; /* Show nav for wider screens */
+            flex-grow: 0.5; /* Allow it to grow and fill space */
+            background: none;
+            flex-direction:column;
+            box-shadow:none;
+            min-width: 1000px;
+            z-index: -100;
+            height: 10px;      
+
+        }
+    
+        #widescreen-nav ul {
+            display: flex; /* Use flexbox for the list */
+            justify-content:space-around; /* Evenly distribute items */
+            align-items: center; /* Align items vertically */
+            width: 100%; /* Make ul take full width */
+            line-height: 2em;
+            margin-top: 20px;
+            
+            
+        }
+
+    #mobile-menu {
+        display: none;
+    }
+    
+        #widescreen-nav li {
+            padding: 0 3em; /* Add padding to list items */
+            margin: 8px;
+                               margin: auto;
+
+        }
+    
+        #widescreen-nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: rgb(255, 255, 255); /* Set link color */
+                text-decoration: none;
+                    border-bottom: none;
+                   
+        }
+    
+        #logo {
+   margin-right: 60%;
+        
+        }
+        /* Styles for the hamburger menu */
+    }
