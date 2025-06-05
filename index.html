@@ -1,240 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NN Shop</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Pictures/favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Pictures/favicon.ico" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="progress-bar"></div>
-    
+
     <div id="scroll-container">
-
-  
-  <!-- Navigation -->
-    <header> 
-        <a id="logo-link" href="index.html"> <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"></a>
+      <!-- Navigation -->
+      <header>
+        <a id="logo-link" href="index.html">
+          <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"
+        /></a>
         <div id="widescreen-div">
-
-              <!-- Widescreen Nav -->
-              <nav id="widescreen-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#cart">Cart</a></li>
-                </ul>
-                
-            </nav>
+          <!-- Widescreen Nav -->
+          <nav id="widescreen-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#cart">Cart</a></li>
+            </ul>
+          </nav>
         </div>
-    
-            <div id="mobile-menu">
-                
-             <!-- Menu button -->
-    
-            <button class="menu-bttn-open" id="open-menu">
-            
-    
-    <span class="menu-icon">
-            <span class="lines">
+
+        <div id="mobile-menu">
+          <!-- Menu button -->
+
+          <button class="menu-bttn-open" id="open-menu">
+            <span class="menu-icon">
+              <span class="lines"> </span>
+              <span class="lines"> </span>
+              <span class="lines"> </span>
             </span>
-            <span class="lines">
-            </span>
-            <span class="lines">
-            </span>
-    
-    </span>
-           <span class="menu-text">Menu </span> 
-            </button>
-    
-            <!-- Mobile Nav Menu sections-->
-          
-            <nav id="nav-menu">
-               
+            <span class="menu-text">Menu </span>
+          </button>
+
+          <!-- Mobile Nav Menu sections-->
+
+          <nav id="nav-menu">
             <button class="menu-bttn-close" id="close-menu">
-                    <span class="menu-icon"> 
-                    <span class="linecross1"></span>    
-                    <span class="linecross2"></span>
-    
-                        </span>
-    
-            <span class="menu-text">Close Menu</span>
-           
-    
-         </button>
-    
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#cart">Cart</a></li>
-        </ul>
-            </nav>
-        </div>
-    </header>
+              <span class="menu-icon">
+                <span class="linecross1"></span>
+                <span class="linecross2"></span>
+              </span>
 
-    <!-- Hero Section -->
-    <div id="home" class="hero-section">
-   
+              <span class="menu-text">Close Menu</span>
+            </button>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#cart">Cart</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <div id="home" class="hero-section">
         <div class="hero-content">
-           
-                        <h1> Unearth the rejuvenating power of Nature
-                            </h1>
-            <p>Welcome to Naturally Nate's organic shop. These product are made just for you! 💝 ReDiscover the beauty of nature and unearth the ingredients for your next breakfast below
-            </p>
-            <a href="#shop" class="cta-button">Shop Now</a>
+          <h1>Unearth the rejuvenating power of Nature</h1>
+          <p>
+            Welcome to Naturally Nate's organic shop. These product are made
+            just for you! 💝 Rediscover the beauty of nature — and unearth the
+            ingredients for your next breakfast
+          </p>
+            
+          <div class="bttn-centered">
+
+          <a href="#shop" class="cta-button">Shop Now</a>
         </div>
-    </div>
+      </div>
+      </div>
 
-    <div class="video-container">
+      <div class="video-container">
+        <video src="Media-content/video_background.webm" autoplay muted loop></video>
+      </div>
 
-        <video src="Pictures/video_background.webm" autoplay muted loop></video>
-    </div>
-    
-
-    <!-- Shop Section -->
-    <section id="shop" class="shop-section">
+      <!-- Shop Section -->
+      <section id="shop" class="shop-section">
         <div class="product-grid">
-            <!-- Example Product Card -->
-            <div class="product-card">
-                <img src="Pictures/Walnuts.png" alt="Product Image">
-                <h2><a class="product-links" href="product-1.html">Naturally Nate's Organic Walnuts</a></h2>
-                <p class="price">€10</p>
-                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/Oats.png" alt="Product Image">
-                <h2><a class="product-links" href="product-2.html">Naturally Nate's Organic Oats</a></h2>
-                <p class="price">€6</p>
-                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/Paleo.png" alt="Product Image">
-                <h2><a class="product-links" href="product-3.html">Naturally Nate's Paleo Muesli</a></h2>
-                <p class="price">€12</p>
-                <button class="add-to-cart" data-product-id="3">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/sunflower_seeds.png" alt="Product Image">
-                <h2><a class="product-links" href="product-4.html">Naturally Nate's Organic Sunflower Seeds</a></h2>
-                <p class="price">€6</p>
-                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/almonds.png" alt="Product Image">
-                <h2><a class="product-links" href="product-5.html">Naturally Nate essentials: Organic Almonds</a></h2>
-                <p class="price">$12</p>
-                <button class="add-to-cart" data-product-id="5">Add to Cart</button>
-            </div>
+          <!-- Example Product Card -->
+          <div class="product-card">
+            <img src="Media-content/Walnuts.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-1.html"
+                >Naturally Nate's Organic Walnuts</a
+              >
+            </h2>
+            <p class="price">€10</p>
+            <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Media-content/Oats.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-2.html"
+                >Naturally Nate's Organic Oats</a
+              >
+            </h2>
+            <p class="price">€6</p>
+            <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Media-content/Paleo_JPG.jpg" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-3.html"
+                >Naturally Nate's Paleo Muesli</a
+              >
+            </h2>
+            <p class="price">€12</p>
+            <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Media-content/sunflower_seeds.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-4.html"
+                >Naturally Nate's Organic Sunflower Seeds</a
+              >
+            </h2>
+            <p class="price">€6</p>
+            <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Media-content/almonds.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-5.html"
+                >Naturally Nate essentials: Organic Almonds</a
+              >
+            </h2>
+            <p class="price">€12</p>
+            <button class="add-to-cart" data-product-id="5">Add to Cart</button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Us Section -->
-    <section id="about-us" class="about-us-section">
+      <!-- About Us Section -->
+      <section id="about-us" class="about-us-section">
         <h2>About Us</h2>
-        <p>At Naturally Nate, our mission is to provide our customers with the highest quality organic products sourced sustainably from nature. We believe in promoting health and well-being through nutritious and delicious food options. Our values include transparency, integrity, and environmental stewardship. We are committed to fostering a community of health-conscious individuals who share our passion for wholesome living.</p>        <div class="team">
-            <!--  Team Member -->
-            <div class="team-member">
-                <img src="lama-co-starter.png" alt="Another Team Member">
-                <h3>Jane Smith</h3>
-                <p>Jane is our head of marketing. With her creative ideas and strategic thinking, she ensures that our products reach the right audience and make a positive impact in the market.</p>
-            </div>
-           <!--  Team Member -->
+        <p id="about-us-p">
+          At Naturally Nate, our mission is to provide our customers with the
+          highest quality organic products sourced sustainably from nature. We
+          believe in promoting health and well-being through nutritious and
+          delicious food options. Our values include transparency, integrity,
+          and environmental stewardship. We are committed to fostering a
+          community of health-conscious individuals who share our passion for
+          wholesome living.
+        </p>
+        <div class="team">
+          <!--  Team Member -->
+          <div class="team-member">
+            <img src="Media-content/IMG_6161flattened.300x300.avif" alt="Another Team Member" />
+            <h3>Neon Nate</h3>
+            <p>
+              Neon Nate is our head of marketing. With his creative ideas and
+              strategic thinking, he ensures that our products reach the right
+              audience and make a positive impact in the market.
+            </p>
+          </div>
+          <!--  Team Member -->
 
-            <div class="team-member">
-                <img src="Pictures/portrait.png" alt="Team Member">
-                <h3>Nate W.</h3>
-                <p>Nate is a co-founder and CEO of Naturally Nate. With a passion for healthy and sustainable living, Nate leads our team in delivering high-quality, organic products to our customers.</p>
+          <div class="team-member">
+            <div id="videoContainer">
+            <video
+              id="myVideo"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            >
+              <source src="Media-content/Train_cinemagraph-265.mp4" type="video/mp4" />
+              <source src="cinemagraph.webm" type="video/webm" />
+              <!-- Fallback image if video is not supported -->
+              <img src="static-image.jpg" alt="Description of cinemagraph" />
+            </video>
             </div>
-           
+          <h3>Cinemagraphic Nate (CN)</h3>
+          <p>
+            CN is our co-founder and CEO of Naturally Nate. With a passion for
+            healthy and sustainable living, CN leads our team in delivering
+            high-quality, organic products to our customers.
+          </p>
+          
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact-us" class="contact-us-section">
+      <!-- Contact Us Section -->
+      <section id="contact-us" class="contact-us-section">
         <h2>Contact Us</h2>
         <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject">
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
         </form>
         <div class="contact-info">
-            <p>Address: 123 Main St, Anytown, USA</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: contact@company.com</p>
+          <p>Address: 123 Main St, Anytown, USA</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: contact@company.com</p>
         </div>
-    </section>
+      </section>
 
-    <!-- Cart Section -->
-    <section id="cart" class="cart-section">
+      <!-- Cart Section -->
+      <section id="cart" class="cart-section">
         <h2>Your Cart</h2>
         <div class="cart-items">
-            <!-- Cart items will be dynamically added here -->
+          <!-- Cart items will be dynamically added here -->
         </div>
-        <p class="total">Total: $0.00</p>
+        <p class="total">Total: €0.00</p>
         <button id="checkout-button">Checkout</button>
         <button id="clear-cart-button">Clear Cart</button>
-    </section>
-    
-    <!-- Slideshow Section -->
-    <section>
-<div class="slideshow-container">
-    <h2>User submitted photos</h2>
-    
-    <div class="mySlides">
-        <img src="Pictures/sunflower_seeds.png" alt="A jar of sunflower seeds" style="width:100%">
-        <div class="numbertext">1 / 5</div>
-    </div>
-    
-    <div class="mySlides">
-        <img src="Pictures/Oats.png" alt="A jar of sunflower seeds" style="width:100%">
-        <div class="numbertext">2 / 5</div>
-    </div>
-    
-    <div class="mySlides">
-        <img src="Pictures/Paleo_JPG.jpg" alt="A jar of Paleo seeds with a exotic plant" style="width:100%">
-        <div class="numbertext">3 / 5</div>
-    </div>
+      </section>
 
-        
-    <div class="mySlides">
-        <img src="Pictures/Walnuts.png" alt="A jar of delicious walnuts " style="width:100%">
-        <div class="numbertext">4 / 5</div>
-    </div>
-    
-        
-    <div class="mySlides">
-          <img src="Pictures/almonds.png" alt="Tasty organic almonds" style="width:100%">
-        <div class="numbertext">5/ 5</div>
-    </div>
-    
-    
-    <a class="prev">&#10094;</a>
-    <a class="next">&#10095;</a>
-    
-    <div class="caption-container">
-        <p class="caption"></p>
-    </div>
-</div>
-    </section>
+      <!-- Slideshow Section -->
+      <section>
+        <div class="slideshow-container">
+          <h2>User submitted photos</h2>
+
+          <div class="mySlides">
+            <img
+              src="Media-content/sunflower_seeds.png"
+              alt="A jar of sunflower seeds"
+              style="width: 100%"
+            />
+            <div class="numbertext">1 / 5</div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="Media-content/Oats.png"
+              alt="A jar of sunflower seeds"
+              style="width: 100%"
+            />
+            <div class="numbertext">2 / 5</div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="Media-content/Paleo_JPG.jpg"
+              alt="A jar of Paleo seeds with a exotic plant"
+              style="width: 100%"
+            />
+            <div class="numbertext">3 / 5</div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="Media-content/Walnuts.png"
+              alt="A jar of delicious walnuts "
+              style="width: 100%"
+            />
+            <div class="numbertext">4 / 5</div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="Media-content/almonds.png"
+              alt="Tasty organic almonds"
+              style="width: 100%"
+            />
+            <div class="numbertext">5/ 5</div>
+          </div>
+
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+
+          <div class="caption-container">
+            <p class="caption"></p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js.js"></script>
-
-</body>
+  </body>
 </html>
