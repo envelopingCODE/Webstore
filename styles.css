@@ -992,3 +992,73 @@ a:hover {
 .add-to-cart.clicked::after {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    min-width: unset;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    margin: 0.5rem 0;
+  }
+
+  .product-card-details {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .product-description {
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .hero-content p,
+  h1 {
+    padding: 1rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #logo {
+    scale: 1.5;
+    margin: 0 auto;
+  }
+
+  .product-meta h2 {
+    font-size: 1.2rem;
+  }
+
+  .product-media img {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    padding: 2rem 1rem;
+  }
+
+  .product-page {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section {
+    padding: 1rem;
+  }
+}
