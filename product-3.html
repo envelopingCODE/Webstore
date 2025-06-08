@@ -61,20 +61,26 @@
       <main class="product-page">
         <div class="product-info">
           <div class="product-media">
-            <picture>
+            <video
+              id="productVideo"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              width="00"
+              height="300"
+            >
               <source
-                srcset="Media-content/Paleo_AVIF.avif"
-                type="image/avif"
+                src="Media-content/Video/mp4_720p_30fps_Product_Vid.webm"
+                type="video/webm"
               />
-              <source srcset="Media-content/Paleo_JPG.jpg" type="image/jpeg" />
-              <img
-                src="Media-content/Paleo_JPG.jpg"
-                alt="Naturally Nate's Paleo Muesli"
-                width="300"
-                height="300"
-                loading="lazy"
+              <source
+                src="Media-content/Video/mp4_720p_30fps_Product_Vid.mp4"
+                type="video/mp4"
               />
-            </picture>
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="product-meta">
             <h2>Naturally Nate's Paleo Muesli</h2>

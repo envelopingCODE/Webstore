@@ -806,11 +806,10 @@ a:hover {
     #logo {
       margin-left: 60%;
     }
-    /* Styles for the hamburger menu */
+    /* Style for the hamburger menu */
   }
 }
 
-/* Default (Mobile First) */
 #widescreen-nav {
   display: none;
 }
@@ -919,6 +918,35 @@ a:hover {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .add-to-cart {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+
+.product-page {
+  padding-top: 10rem;
+}
+
+@media (max-width: 768px) {
+  .product-page {
+    padding-top: 6rem; /* Slightly less for mobile */
+  }
+}
+
+#productVideo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
 /* Related product styling */
 .related-products-section {
   padding-top: 2rem;
@@ -961,7 +989,7 @@ a:hover {
   transform: translateY(-50%);
   opacity: 0;
   font-weight: bold;
-  color: #00ffd4;
+  color: #000000;
   transition: opacity 0.3s ease;
 }
 
