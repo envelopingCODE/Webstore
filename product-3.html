@@ -1,207 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NN Shop</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Pictures/favicon.ico">
-    <style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Pictures/favicon.ico" />
+    <style></style>
+  </head>
 
-          </style>
-</head>
-
-<body>
+  <body>
     <div id="progress-bar"></div>
-    
+
     <div id="scroll-container">
-
-   
-  <!-- Navigation -->
-  <header> 
-    <a id="logo-link" href="index.html"> <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"></a>
-    <div id="widescreen-div">
-
+      <!-- Navigation -->
+      <header>
+        <a id="logo-link" href="index.html">
+          <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"
+        /></a>
+        <div id="widescreen-div">
           <!-- Widescreen Nav -->
           <nav id="widescreen-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#cart">Cart</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="#cart">Cart</a></li>
             </ul>
-            
-        </nav>
-    </div>
+          </nav>
+        </div>
 
         <div id="mobile-menu">
-            
-         <!-- Menu button -->
+          <!-- Menu button -->
 
-        <button class="menu-bttn-open" id="open-menu">
-        
+          <button class="menu-bttn-open" id="open-menu">
+            <span class="menu-icon">
+              <span class="lines"> </span>
+              <span class="lines"> </span>
+              <span class="lines"> </span>
+            </span>
+            <span class="menu-text">Menu </span>
+          </button>
 
-<span class="menu-icon">
-        <span class="lines">
-        </span>
-        <span class="lines">
-        </span>
-        <span class="lines">
-        </span>
+          <!-- Mobile Nav Menu sections-->
 
-</span>
-       <span class="menu-text">Menu </span> 
-        </button>
-
-        <!-- Mobile Nav Menu sections-->
-      
-        <nav id="nav-menu">
-           
-        <button class="menu-bttn-close" id="close-menu">
-                <span class="menu-icon"> 
-                <span class="linecross1"></span>    
+          <nav id="nav-menu">
+            <button class="menu-bttn-close" id="close-menu">
+              <span class="menu-icon">
+                <span class="linecross1"></span>
                 <span class="linecross2"></span>
+              </span>
 
-                    </span>
+              <span class="menu-text">Close Menu</span>
+            </button>
 
-        <span class="menu-text">Close Menu</span>
-       
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#cart">Cart</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-     </button>
-
-     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#cart">Cart</a></li>
-    </ul>
-        </nav>
-    </div>
-</header>
-
-    <!-- Hero Section -->
-    <div id="home" class="product-hero-section">
-        
+      <!-- Hero Section -->
+      <div id="home" class="product-hero-section">
         <div class="product-details-container">
-            <div class="product-card-details">
-                <picture>
-                    <source srcset="Pictures/Paleo_AVIF.avif" type="image/avif">
-                    <source srcset="Pictures/Paleo_JPG.jpg" type="image/jpeg">
-                    <img src="Pictures/Paleo JPG.jpg" alt="Naturally Nate's Paleo Muesli">
-                </picture>
-                <h2>Naturally Nate's Paleo Muesli</h2>
-                <p class="price">€12</p>
-                    <button class="add-to-cart" data-product-id="3">Add to Cart</button>
-            </div>
-            <div class="product-description">
-                <h3>Product Description</h3>
-                <p>Start your day with the nutritious and delicious Naturally Nate's Paleo Muesli. Made from a blend of organic nuts, seeds, and dried fruits, our muesli is free from grains and added sugars, making it the perfect choice for those following a paleo or low-carb lifestyle. Enjoy it with your favorite milk, yogurt, or as a crunchy topping for smoothie bowls. Packed with protein, healthy fats, and fiber, Naturally Nate's Paleo Muesli provides sustained energy and supports a healthy, balanced diet.</p>            </div>
+          <div class="product-card-details">
+            <picture>
+              <source srcset="Pictures/Paleo_AVIF.avif" type="image/avif" />
+              <source srcset="Pictures/Paleo_JPG.jpg" type="image/jpeg" />
+              <img
+                src="Pictures/Paleo JPG.jpg"
+                alt="Naturally Nate's Paleo Muesli"
+              />
+            </picture>
+            <h2>Naturally Nate's Paleo Muesli</h2>
+            <p class="price">€12</p>
+            <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+          </div>
+          <div class="product-description">
+            <h3>Product Description</h3>
+            <p>
+              Start your day with the nutritious and delicious Naturally Nate's
+              Paleo Muesli. Made from a blend of organic nuts, seeds, and dried
+              fruits, our muesli is free from grains and added sugars, making it
+              the perfect choice for those following a paleo or low-carb
+              lifestyle. Enjoy it with your favorite milk, yogurt, or as a
+              crunchy topping for smoothie bowls. Packed with protein, healthy
+              fats, and fiber, Naturally Nate's Paleo Muesli provides sustained
+              energy and supports a healthy, balanced diet.
+            </p>
+          </div>
         </div>
-    </div>  
+      </div>
 
-    <div class="video-container">
-
+      <div class="video-container">
         <video src="Pictures/video_background.webm" autoplay muted loop></video>
-    </div>
-    
+      </div>
 
-    
-    <!-- Shop Section -->
-    <section id="shop" class="shop-section">
+      <!-- Shop Section -->
+      <section id="shop" class="shop-section">
         <div class="product-grid">
-            <!-- Product Card -->
-                     
-            <div class="product-card">
-                <img src="Pictures/Walnuts.png" alt="Product Image">
-                <h2><a class="product-links" href="product-1.html">Naturally Nate's Organic Walnuts</a></h2>
-                <p class="price">€10</p>
-                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/Oats.png" alt="Product Image">
-                <h2><a class="product-links" href="product-2.html">Naturally Nate's Organic Oats</a></h2>
-                <p class="price">€6</p>
-                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
-            </div>
-          
-            <div class="product-card">
-                <img src="Pictures/sunflower_seeds.png" alt="Product Image">
-                <h2><a class="product-links" href="product-4.html">Naturally Nate's Organic Sunflower Seeds</a></h2>
-                <p class="price">€6</p>
-                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Pictures/almonds.png" alt="Product Image">
-                <h2><a class="product-links" href="product-5.html">Naturally Nate essentials: Organic Almonds</a></h2>
-                <p class="price">$12</p>
-                <button class="add-to-cart" data-product-id="5">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+          <!-- Product Card -->
 
-     <!-- Cart Section -->
-     <section id="cart" class="cart-section">
+          <div class="product-card">
+            <img src="Pictures/Walnuts.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-1.html"
+                >Naturally Nate's Organic Walnuts</a
+              >
+            </h2>
+            <p class="price">€10</p>
+            <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Pictures/Oats.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-2.html"
+                >Naturally Nate's Organic Oats</a
+              >
+            </h2>
+            <p class="price">€6</p>
+            <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="Pictures/sunflower_seeds.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-4.html"
+                >Naturally Nate's Organic Sunflower Seeds</a
+              >
+            </h2>
+            <p class="price">€6</p>
+            <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="Pictures/almonds.png" alt="Product Image" />
+            <h2>
+              <a class="product-links" href="product-5.html"
+                >Naturally Nate essentials: Organic Almonds</a
+              >
+            </h2>
+            <p class="price">$12</p>
+            <button class="add-to-cart" data-product-id="5">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cart Section -->
+      <section id="cart" class="cart-section">
         <h2>Your Cart</h2>
         <div class="cart-items">
-            <!-- Cart items will be dynamically added here -->
+          <!-- Cart items will be dynamically added here -->
         </div>
         <p class="total">Total: $0.00</p>
         <button id="checkout-button">Checkout</button>
         <button id="clear-cart-button">Clear Cart</button>
-    </section>
-
+      </section>
     </div>
-
-   
 
     <!-- Contact Us Section -->
     <section id="contact-us" class="contact-us-section">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject">
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <div class="contact-info">
-            <p>Address: 123 Main St, Anytown, USA</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: contact@company.com</p>
-        </div>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-info">
+        <p>Address: 123 Main St, Anytown, USA</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@company.com</p>
+      </div>
     </section>
-
-    <section id="about-us" class="about-us-section">
-        <h2>About Us</h2>
-        <p>At Naturally Nate, our mission is to provide our customers with the highest quality organic products sourced sustainably from nature. We believe in promoting health and well-being through nutritious and delicious food options. Our values include transparency, integrity, and environmental stewardship. We are committed to fostering a community of health-conscious individuals who share our passion for wholesome living.</p>        <div class="team">
-            <!--  Team Member -->
-            <div class="team-member">
-                <img src="lama-co-starter.png" alt="Another Team Member">
-                <h3>Jane Smith</h3>
-                <p>Jane is our head of marketing. With her creative ideas and strategic thinking, she ensures that our products reach the right audience and make a positive impact in the market.</p>
-            </div>
-           <!--  Team Member -->
-
-            <div class="team-member">
-                <img src="Pictures/portrait.png" alt="Team Member">
-                <h3>Nate W.</h3>
-                <p>Nate is a co-founder and CEO of Naturally Nate. With a passion for healthy and sustainable living, Nate leads our team in delivering high-quality, organic products to our customers.</p>
-            </div>
-           
-        </div>
-    </section>
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js.js"></script>
-</body>
+  </body>
 </html>

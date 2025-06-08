@@ -87,52 +87,125 @@
       <!-- Shop Section -->
       <section id="shop" class="shop-section">
         <div class="product-grid">
-          <!-- Example Product Card -->
+
           <div class="product-card">
-            <img src="Media-content/Walnuts.png" alt="Product Image" />
-            <h2>
-              <a class="product-links" href="product-1.html"
-                >Naturally Nate's Organic Walnuts</a
-              >
+              <picture>
+                <!-- Web optimized, smallest size pic-->
+
+              <source
+                srcset="Media-content/Walnuts.webp"
+                type="image/webp"
+              />
+              <!-- Fallback-->
+              <img
+                src="Media-content/Walnuts.png"
+                alt="A glass jar of delicious walnuts "
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
             </h2>
             <p class="price">€10</p>
             <button class="add-to-cart" data-product-id="1">Add to Cart</button>
           </div>
           <div class="product-card">
-            <img src="Media-content/Oats.png" alt="Product Image" />
+
+            <picture>
+               <!-- Web optimized, smallest sized pic-->
+              <source
+                srcset="Media-content/sunflowerseeds.WEBP"
+                type="image/webp"
+              />
+              <!-- Fallback-->
+              <img
+                src="Media-content/sunflowerseeds.png"
+                alt="Picture of a jar of sunflower seeds backlit with neon light"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+
             <h2>
               <a class="product-links" href="product-2.html"
-                >Naturally Nate's Organic Oats</a
+                >Naturally Nate's Sunflower Seeds</a
               >
             </h2>
             <p class="price">€6</p>
             <button class="add-to-cart" data-product-id="2">Add to Cart</button>
           </div>
           <div class="product-card">
-            <img src="Media-content/Paleo_JPG.jpg" alt="Product Image" />
+
+            <picture>
+           <!-- Web optimized, smallest size pic-->
+             <source
+                srcset="Media-content/Paleo_AVIF.avif"
+                type="image/avif"
+              />
+            
+              <!-- Fallback-->
+              <img
+                src="Media-content/Paleo_JPG.jpg"
+                alt="Picture of a jar of Paleo Muesli in a user's palm next to an exotic plant"
+                width="300"
+                height="400"
+                loading="lazy"
+              />
+            </picture>
+
             <h2>
               <a class="product-links" href="product-3.html"
                 >Naturally Nate's Paleo Muesli</a
               >
             </h2>
+
             <p class="price">€12</p>
             <button class="add-to-cart" data-product-id="3">Add to Cart</button>
           </div>
+
           <div class="product-card">
-            <img src="Media-content/sunflower_seeds.png" alt="Product Image" />
+
+            <picture>
+              <!-- Web optimized, smallest size pic-->
+              <source srcset="Media-content/oats2.webp" type="image/webp" />
+                 <!-- Fallback-->
+
+              <img
+                src="Media-content/oats2.png"
+                alt="Picture of a jar of rolled oats"
+                width="300"
+                height="400"
+                loading="lazy"
+              />
+            </picture>
+
             <h2>
               <a class="product-links" href="product-4.html"
-                >Naturally Nate's Organic Sunflower Seeds</a
+                >Naturally Nate's Organic Jared Oats</a
               >
             </h2>
             <p class="price">€6</p>
             <button class="add-to-cart" data-product-id="4">Add to Cart</button>
           </div>
           <div class="product-card">
-            <img src="Media-content/almonds.png" alt="Product Image" />
+
+            <picture>
+              <!-- Web optimized, smallest size pic-->
+              <source srcset="Media-content/flakes.webp" type="image/webp" />
+              <!-- Fallback-->
+              <img
+                src="Media-content/flakes.png"
+                alt="Picture of a jar of dinkel corn flakes"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+
             <h2>
               <a class="product-links" href="product-5.html"
-                >Naturally Nate essentials: Organic Almonds</a
+                >Naturally Nate's Gluten Free Flakes</a
               >
             </h2>
             <p class="price">€12</p>
@@ -157,10 +230,26 @@
         <div class="team">
           <!--  Team Member -->
           <div class="team-member">
-            <img
-              src="Media-content/IMG_6161flattened.300x300.avif"
-              alt="Another Team Member"
-            />
+            <!-- Web optimized, smallest size pic-->
+
+            <picture>
+              <source
+                srcset="Media-content/Portait.300x300.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="Media-content/Portait.300x300.webp"
+                type="image/webp"
+              />
+              <img
+                src="Media-content/Portait.300x300.jpg"
+                alt="Picture of Team Member Neon Nate"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Neon Nate</h3>
             <p>
               Neon Nate is our head of marketing. With his creative ideas and
@@ -179,28 +268,31 @@
                 muted
                 playsinline
                 preload="auto"
+                width="300"
+                height="300"
               >
-                <source
-                  src="Media-content/Video/Mp4_24fps_Train_cinemagraph-264.mp4"
-                  type="video/mp4"
-                />
+                <!-- Web optimized, smallest size vid-->
+
                 <source
                   src="Media-content/Video/Webm_24fps_TrainCinemagraph.webm"
                   type="video/webm"
                 />
-                <!-- Fallback image if video is not supported -->
-                <img src="static-image.jpg" alt="Description of cinemagraph" />
+
+                <!-- Fallback mp4 if webm vid is not supported -->
+
+                <source
+                  src="Media-content/Video/Mp4_24fps_Train_cinemagraph-264.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
 
-            <div class="team-member">
-              <h3>Cinemagraphic Nate (CN)</h3>
-              <p>
-                CN is our co-founder and CEO of Naturally Nate. With a passion
-                for healthy and sustainable living, CN leads our team in
-                delivering high-quality, organic products to our customers.
-              </p>
-            </div>
+            <h3>Cinemagraphic Nate (CN)</h3>
+            <p>
+              CN is our co-founder and CEO of Naturally Nate. With a passion for
+              healthy and sustainable living, CN leads our team in delivering
+              high-quality, organic products to our customers.
+            </p>
           </div>
         </div>
       </section>
@@ -274,11 +366,8 @@
           </div>
 
           <div class="mySlides">
-            <img
-              src="Media-content/Walnuts.png"
-              alt="A jar of delicious walnuts "
-              style="width: 100%"
-            />
+          
+
             <div class="numbertext">4 / 5</div>
           </div>
 

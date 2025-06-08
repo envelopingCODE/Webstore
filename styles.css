@@ -242,7 +242,6 @@ a {
   height: 300px; /* Same as width */
   overflow: hidden;
   margin: auto;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%; /* Round the edges of the container */
@@ -451,6 +450,10 @@ button {
 .team-member {
   text-align: center;
   max-width: 400px;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
 }
 
 .team-member img {
