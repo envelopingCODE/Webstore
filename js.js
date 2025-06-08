@@ -69,10 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Define the products available in the store
   const products = [
     { id: 1, name: "Naturally Nate's Organic Walnuts", price: 10.0 },
-    { id: 2, name: "Naturally Nate's Organic Oats", price: 6.0 },
+    { id: 2, name: "Naturally Nate's Sunflower Seeds", price: 6.0 },
     { id: 3, name: "Naturally Nate's Paleo Muesli", price: 12.0 },
-    { id: 4, name: "Naturally Nate's Organic Sunflower Seeds", price: 6.0 },
-    { id: 5, name: "Naturally Nate essentials: Organic Almonds", price: 12.0 },
+    { id: 4, name: "Naturally Nate's Organic Jared Oats", price: 6.0 },
+    { id: 5, name: "Naturally Nate's Gluten Free Flakes", price: 12.0 },
   ];
 
   // Function to load the cart from localStorage
@@ -162,6 +162,23 @@ document.querySelectorAll("#nav-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     // Close the menu when a link is clicked
     ToggleMenu();
+  });
+});
+
+// Animation Trigger
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".add-to-cart");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.add("clicked");
+
+      // Remove animation class after it ends so it can be retriggered
+      setTimeout(() => {
+        btn.classList.remove("clicked");
+      }, 500);
+    });
   });
 });
 

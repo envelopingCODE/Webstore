@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NN Shop</title>
+    <title>Naturally Nate – Organic Oats</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="Pictures/favicon.ico" />
-    <style></style>
+    <link rel="icon" href="Media-content/favicon.ico" />
   </head>
 
   <body>
     <div id="progress-bar"></div>
-
     <div id="scroll-container">
-      <!-- Navigation -->
       <header>
         <a id="logo-link" href="index.html">
-          <img id="logo" src="NN_logo_alt_black.svg" alt="Naturally Nate logo"
-        /></a>
+          <img
+            id="logo"
+            src="NN_logo_alt_black.svg"
+            alt="Naturally Nate logo"
+          />
+        </a>
         <div id="widescreen-div">
-          <!-- Widescreen Nav -->
           <nav id="widescreen-nav">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#shop">Shop</a></li>
+              <li><a href="index.html#shop">Shop</a></li>
               <li><a href="index.html#about">About Us</a></li>
               <li><a href="#cart">Cart</a></li>
             </ul>
@@ -31,18 +31,14 @@
         </div>
 
         <div id="mobile-menu">
-          <!-- Menu button -->
-
           <button class="menu-bttn-open" id="open-menu">
             <span class="menu-icon">
-              <span class="lines"> </span>
-              <span class="lines"> </span>
-              <span class="lines"> </span>
+              <span class="lines"></span>
+              <span class="lines"></span>
+              <span class="lines"></span>
             </span>
-            <span class="menu-text">Menu </span>
+            <span class="menu-text">Menu</span>
           </button>
-
-          <!-- Mobile Nav Menu sections-->
 
           <nav id="nav-menu">
             <button class="menu-bttn-close" id="close-menu">
@@ -50,132 +46,171 @@
                 <span class="linecross1"></span>
                 <span class="linecross2"></span>
               </span>
-
               <span class="menu-text">Close Menu</span>
             </button>
-
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#shop">Shop</a></li>
-              <li><a href="#about-us">About Us</a></li>
+              <li><a href="index.html#shop">Shop</a></li>
+              <li><a href="index.html#about">About Us</a></li>
               <li><a href="#cart">Cart</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <!-- Hero Section -->
-      <div id="home" class="product-hero-section">
-        <div class="product-details-container">
-          <div class="product-card-details">
-            <img src="Pictures/sunflower_seeds.png" alt="Product Image" />
-            <h2>Naturally Nate's Organic Sunflower Seeds</h2>
-            <p class="price">€6</p>
-            <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+      <main class="product-page">
+        <div class="product-info">
+          <div class="product-media">
+            <picture>
+              <source srcset="Media-content/oats2.webp" type="image/webp" />
+              <img
+                src="Media-content/oats2.png"
+                alt="Jar of organic oats"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
           </div>
-          <div class="product-description">
-            <h3>Product Description</h3>
-            Naturally Nate's Organic Sunflower Seeds are a delicious and
-            nutritious snack, perfect for adding a crunchy texture to your
-            favorite dishes. These sunflower seeds are organically grown and
-            carefully harvested to ensure the highest quality. Rich in vitamins
-            and minerals, they provide a healthy dose of protein, fiber, and
-            essential fatty acids. Enjoy them on their own, sprinkled over
-            salads, or mixed into your morning smoothie for an extra boost of
-            energy. Embrace the natural goodness of Naturally Nate's Organic
-            Sunflower Seeds and elevate your snacking experience.
-          </div>
-        </div>
-      </div>
-
-      <div class="video-container">
-        <video src="Pictures/video_background.webm" autoplay muted loop></video>
-      </div>
-
-      <!-- Shop Section -->
-      <section id="shop" class="shop-section">
-        <div class="product-grid">
-          <!-- Product Card -->
-          <div class="product-card">
-            <img src="Pictures/Walnuts.png" alt="Product Image" />
-            <h2>
-              <a class="product-links" href="product-1.html"
-                >Naturally Nate's Organic Walnuts</a
-              >
-            </h2>
-            <p class="price">€10</p>
-            <button class="add-to-cart" data-product-id="1">Add to Cart</button>
-          </div>
-          <div class="product-card">
-            <img src="Pictures/Oats.png" alt="Product Image" />
-            <h2>
-              <a class="product-links" href="product-2.html"
-                >Naturally Nate's Organic Oats</a
-              >
-            </h2>
+          <div class="product-meta">
+            <h2>Naturally Nate's Organic Oats</h2>
+            <ul class="product-bullets">
+              <li>100% Organic and Non-GMO</li>
+              <li>High in Fiber and Essential Nutrients</li>
+              <li>Perfect for Oatmeal, Smoothies, and Baking</li>
+              <li>Grown Sustainably with No Pesticides</li>
+            </ul>
             <p class="price">€6</p>
             <button class="add-to-cart" data-product-id="2">Add to Cart</button>
           </div>
-          <div class="product-card">
-            <img src="Pictures/Paleo.png" alt="Product Image" />
-            <h2>
-              <a class="product-links" href="product-3.html"
-                >Naturally Nate's Paleo Muesli</a
-              >
-            </h2>
-            <p class="price">€12</p>
-            <button class="add-to-cart" data-product-id="3">Add to Cart</button>
-          </div>
-
-          <div class="product-card">
-            <img src="Pictures/almonds.png" alt="Product Image" />
-            <h2>
-              <a class="product-links" href="product-5.html"
-                >Naturally Nate essentials: Organic Almonds</a
-              >
-            </h2>
-            <p class="price">€12</p>
-            <button class="add-to-cart" data-product-id="5">Add to Cart</button>
-          </div>
         </div>
-      </section>
 
-      <!-- Cart Section -->
-      <section id="cart" class="cart-section">
-        <h2>Your Cart</h2>
-        <div class="cart-items">
-          <!-- Cart items will be dynamically added here -->
-        </div>
-        <p class="total">Total: €0.00</p>
-        <button id="checkout-button">Checkout</button>
-        <button id="clear-cart-button">Clear Cart</button>
-      </section>
+        <section class="related-products-section">
+          <h3>Other Products You Might Like</h3>
+          <div class="product-grid">
+            <div class="product-card">
+              <picture>
+                <source srcset="Media-content/Walnuts.webp" type="image/webp" />
+                <img
+                  src="Media-content/Walnuts.png"
+                  alt="Jar of walnuts"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <h2>
+                <a class="product-links" href="product-1.html"
+                  >Organic Walnuts</a
+                >
+              </h2>
+              <p class="price">€10</p>
+              <button class="add-to-cart" data-product-id="1">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+              <picture>
+                <source
+                  srcset="Media-content/Paleo_AVIF.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="Media-content/Paleo.png"
+                  alt="Paleo muesli mix"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <h2>
+                <a class="product-links" href="product-3.html">Paleo Muesli</a>
+              </h2>
+              <p class="price">€12</p>
+              <button class="add-to-cart" data-product-id="3">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+              <picture>
+                <source
+                  srcset="Media-content/sunflowerseeds.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="Media-content/sunflowerseeds.png"
+                  alt="Organic sunflower seeds"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <h2>
+                <a class="product-links" href="product-2.html"
+                  >Sunflower Seeds</a
+                >
+              </h2>
+              <p class="price">€6</p>
+              <button class="add-to-cart" data-product-id="2">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+              <picture>
+                <source srcset="Media-content/flakes.webp" type="image/webp" />
+                <img
+                  src="Media-content/flakes.png"
+                  alt="Gluten-free corn flakes"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
+              <h2>
+                <a class="product-links" href="product-5.html"
+                  >Gluten-Free Flakes</a
+                >
+              </h2>
+              <p class="price">€12</p>
+              <button class="add-to-cart" data-product-id="5">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+          <h2>Your Cart</h2>
+          <div class="cart-items"></div>
+          <p class="total">Total: €0.00</p>
+          <button id="checkout-button">Checkout</button>
+          <button id="clear-cart-button">Clear Cart</button>
+        </section>
+
+        <section id="contact-us" class="contact-us-section">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+          <div class="contact-info">
+            <p>Address: 123 Main St, Anytown, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@company.com</p>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <!-- Contact Us Section -->
-    <section id="contact-us" class="contact-us-section">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-      <div class="contact-info">
-        <p>Address: 123 Main St, Anytown, USA</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: contact@company.com</p>
-      </div>
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js.js"></script>
